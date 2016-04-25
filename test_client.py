@@ -15,6 +15,12 @@ rpc_client = RPCClient(
 
 remote_server = rpc_client.get_proxy()
 
+i=0
+while True:
+    try:
+        print remote_server.knaker(test=i)
+    except:
+        pass
 # call a method called 'reverse_string' with a single string argument
 
 
